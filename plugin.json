@@ -10,26 +10,26 @@
     "require"           :   {
                                 "Ceres":"~3.0"
                             },
-    "serviceProvider"   :   "CeresCoconut\\Providers\\CeresCoconutServiceProvider",
+    "serviceProvider"   :   "DenqbarTemplate\\Providers\\DenqbarTemplateServiceProvider",
     "dataProviders"     :
     [
         {
-            "key"           :"CeresCoconut\\Containers\\CeresCoconutContainer",
+            "key"           :"DenqbarTemplate\\Containers\\DenqbarTemplateContainer",
             "name"          :"Stylesheet",
             "description"   :"Add changes to the CSS file"
         },
         {
-            "key"           :"CeresCoconut\\Containers\\CeresCoconutItemListContainer1",
+            "key"           :"DenqbarTemplate\\Containers\\DenqbarTemplateItemListContainer1",
             "name"          :"First item list",
             "description"   :"Display a configurable list of items in your online store"
         },
         {
-            "key"           :"CeresCoconut\\Containers\\CeresCoconutItemListContainer2",
+            "key"           :"DenqbarTemplate\\Containers\\DenqbarTemplateItemListContainer2",
             "name"          :"Second item list",
             "description"   :"Display a configurable list of items in your online store"
         },
         {
-            "key"           :"CeresCoconut\\Containers\\CeresCoconutItemListContainer3",
+            "key"           :"DenqbarTemplate\\Containers\\DenqbarTemplateItemListContainer3",
             "name"          :"Third item list",
             "description"   :"Display a configurable list of items in your online store"
         }
