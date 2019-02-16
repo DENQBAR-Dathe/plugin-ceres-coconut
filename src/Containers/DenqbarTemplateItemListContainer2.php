@@ -1,13 +1,13 @@
 <?php
 
-namespace CeresCoconut\Containers;
+namespace DenqbarTemplate\Containers;
 
 use Plenty\Plugin\Templates\Twig;
 
-class CeresCoconutItemListContainer2
+class DenqbarTemplateItemListContainer2
 {
     public function call(Twig $twig, $arg):string
     {
-        return $twig->render('CeresCoconut::Containers.ItemLists.ItemList2', ["item" => $arg[0]]);
+        return $twig->render('DenqbarTemplate::Containers.ItemLists.ItemList2', ["item" => $arg[0]]);
     }
 }

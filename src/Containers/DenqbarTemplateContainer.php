@@ -1,13 +1,13 @@
 <?php
 
-namespace CeresCoconut\Containers;
+namespace DenqbarTemplate\Containers;
 
 use Plenty\Plugin\Templates\Twig;
 
-class CeresCoconutContainer
+class DenqbarTemplateContainer
 {
     public function call(Twig $twig):string
     {
-        return $twig->render('CeresCoconut::Stylesheet');
+        return $twig->render('DenqbarTemplate::Stylesheet');
     }
 }
