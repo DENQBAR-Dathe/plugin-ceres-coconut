@@ -1,8 +1,6 @@
 
 ![DENQBAR Template Logo](https://cdn02.plentymarkets.com/jm91bracrbxo/frontend/DENQBAR_Layout/DENQBAR-Template-Logo.png)
 
-![plentymarkets Logo](http://www.plentymarkets.eu/layout/pm/images/logo/plentymarkets-logo.jpg)
-
 # DENQBAR Template
 
 DENQBAR Template - Our Coconut theme for Ceres 3.
