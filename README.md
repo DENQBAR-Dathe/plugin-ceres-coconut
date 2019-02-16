@@ -3,9 +3,9 @@
 
 ![plentymarkets Logo](http://www.plentymarkets.eu/layout/pm/images/logo/plentymarkets-logo.jpg)
 
-# CeresCoconut
+# DENQBAR Template
 
-A Coconut theme for Ceres 3.
+DENQBAR Template - Our Coconut theme for Ceres 3.
 
 
 ## Requirements
