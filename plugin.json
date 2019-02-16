@@ -1,13 +1,11 @@
 {
-    "version"           :   "1.0.6",
-    "name"              :   "CeresCoconut",
+    "version"           :   "0.0.1",
+    "name"              :   "DENQBAR Template",
     "pluginIcon"        :   "icon_plugin_xs.png",
     "authorIcon"        :   "icon_author_xs.png",
-    "email"             :   "sales@plentymarkets.com",
-    "phone"             :   "+49 561 98 681 100",
-    "description"       :   "A Coconut theme for Ceres 3.",
-    "namespace"         :   "CeresCoconut",
-    "author"            :   "plentymarkets GmbH",
+    "description"       :   "DENQBAR Template - A Template for Ceres 3.",
+    "namespace"         :   "DENQBAR Template",
+    "author"            :   "Erik Dathe, DENQBAR GmbH",
     "type"              :   "theme",
     "require"           :   {
                                 "Ceres":"~3.0"
