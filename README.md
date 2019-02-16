@@ -3,7 +3,7 @@
 
 # DENQBAR Template
 
-DENQBAR Template - Our Coconut theme for Ceres 3.
+DENQBAR Template - Our Template for Ceres 3.
 
 
 ## Requirements
