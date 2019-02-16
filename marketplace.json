@@ -1,8 +1,8 @@
 {
-    "marketplaceName"   : {"de":"Ceres Coconut","en":"Ceres Coconut"},
+    "marketplaceName"   : {"de":"DENQBAR Template","en":"DENQBAR Template"},
     "license"           : "AGPL-3.0",
-    "price"             : 0.00,
-    "shortDescription"  : { "de": "Ein Coconut-Theme für Ceres 3.", "en": "A Coconut theme for Ceres 3." },
+    "price"             : 5000.00,
+    "shortDescription"  : { "de": "DENQBAR Template - Ein Template für Ceres 3.", "en": "DENQBAR Template - A template for Ceres 3." },
     "categories"        : ["3518"],
     "keywords"          : ["plentymarkets", "plugins", "layout", "theme", "ceres"]
 }
