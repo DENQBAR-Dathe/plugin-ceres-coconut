@@ -1,10 +1,10 @@
 {
     "version"           :   "0.0.1",
-    "name"              :   "DENQBAR Template",
+    "name"              :   "DenqbarTemplate",
     "pluginIcon"        :   "icon_plugin_xs.png",
     "authorIcon"        :   "icon_author_xs.png",
     "description"       :   "DENQBAR Template - A Template for Ceres 3.",
-    "namespace"         :   "DENQBAR Template",
+    "namespace"         :   "DenqbarTemplate",
     "author"            :   "Erik Dathe, DENQBAR GmbH",
     "type"              :   "theme",
     "require"           :   {
