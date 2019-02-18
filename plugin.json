@@ -6,7 +6,7 @@
     "description"       :   "DENQBAR Template - A Template for Ceres 3.",
     "namespace"         :   "DenqbarTemplate",
     "author"            :   "Erik Dathe, DENQBAR GmbH",
-    "type"              :   "theme",
+    "type"              :   "template",
     "require"           :   {
                                 "Ceres":"~3.0"
                             },
