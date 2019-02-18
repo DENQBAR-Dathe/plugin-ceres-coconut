@@ -1,1 +1,10 @@
-/* Enter your CSS here */
+:root {
+    --blue: #00305E;
+    --blue-mid: #369;
+    --blue-light: #69C;
+    --red: #E20020;
+    --yellow: #FC0;
+    --white: #fff;
+    --gray: #DEDEDE;
+    --gray-dark: #333;
+}
