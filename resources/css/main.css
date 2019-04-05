@@ -8,6 +8,12 @@
     --gray: #DEDEDE;
     --gray-dark: #333;
 }
+body {
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+  color: #333;
+}
+
 .top-bar .controls-list .control-basket .toggle-basket-preview {
     background-color: #00305E;
     color: #fff;
