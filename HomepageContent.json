@@ -4,17 +4,22 @@
     "pictures":
     [
       {
-        "pictureUrl": "https://github.com/plentymarkets/plugin-ceres/blob/stable/resources/images/homepage/slider3.jpg?raw=true",
+        "pictureUrl": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/slider1.jpg",
         "text": "",
         "pictureLink": ""
       },
       {
-        "pictureUrl": "https://github.com/plentymarkets/plugin-ceres/blob/stable/resources/images/homepage/slider3.jpg?raw=true",
+        "pictureUrl": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/slider_gebrauchtde.jpg",
         "text": "",
-        "pictureLink": ""
+        "pictureLink": "https://marketplace.plentymarkets.com/de/plugins/templates/Gebraucht_5163"
       },
       {
-        "pictureUrl": "https://github.com/plentymarkets/plugin-ceres/blob/stable/resources/images/homepage/slider3.jpg?raw=true",
+        "pictureUrl": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/slider_paydirekt.jpg",
+        "text": "",
+        "pictureLink": "https://marketplace.plentymarkets.com/plugins/payment/paydirekt_4923"
+      },
+      {
+        "pictureUrl": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/slider2.jpg",
         "text": "",
         "pictureLink": ""
       }
@@ -29,19 +34,31 @@
     "recommended":
     [
       {
-        "pluginIcon": "https://raw.githubusercontent.com/plentymarkets/plugin-ceres/stable/resources/images/homepage/icon_plugin_etsy.png",
+        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_amazon_de.jpg",
+        "pluginText": "Loyale Kunden. Inline-Checkout. Mobiloptimiert.",
+        "pluginLink": "https://pay.amazon.com/de/promotion?ld=SPEXDEAPA-plentymarkets-NL-XiS17",
+        "pluginTitle": "Amazon Pay"
+      },
+      {
+        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_etsy.png",
         "pluginText": "Plugin für Etsy-Marktplatzintegration",
         "pluginLink": "https://marketplace.plentymarkets.com/de/plugins/plentymarkets-GmbH/Etsy_4689",
         "pluginTitle": "Etsy"
       },
       {
-        "pluginIcon": "https://raw.githubusercontent.com/plentymarkets/plugin-ceres/stable/resources/images/homepage/icon_plugin_contact.png",
-        "pluginText": "Anzeige von Kontaktdaten im Webshop",
-        "pluginLink": "https://marketplace.plentymarkets.com/de/plugins/plentymarkets-gmbh/contactcard_4695",
-        "pluginTitle": "Contact Card"
+        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_paydirekt.jpg",
+        "pluginText": "Neues Online-Bezahlverfahren mit Startbonus",
+        "pluginLink": "https://marketplace.plentymarkets.com/plugins/payment/paydirekt_4923",
+        "pluginTitle": "paydirekt"
       },
       {
-        "pluginIcon": "https://raw.githubusercontent.com/plentymarkets/plugin-ceres/stable/resources/images/homepage/icon_plugin_paypal.png",
+        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_gebrauchtde.jpg",
+        "pluginText": "Technik, Bekleidung, Medien, Haushalt, Kfz-Teile uvm. verkaufen!",
+        "pluginLink": "https://marketplace.plentymarkets.com/de/plugins/templates/Gebraucht_5163",
+        "pluginTitle": "gebraucht.de"
+      },
+      {
+        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_paypal.png",
         "pluginText": "Das offizielle PayPal-Plugin für plentymarkets",
         "pluginLink": "https://marketplace.plentymarkets.com/de/plugins/plentymarkets-GmbH/PayPal_4690",
         "pluginTitle": "PayPal"
@@ -54,17 +71,22 @@
     "pictures":
     [
       {
-        "pictureUrl": "https://github.com/plentymarkets/plugin-ceres/blob/stable/resources/images/homepage/slider1.jpg?raw=true",
+        "pictureUrl": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/slider1.jpg",
         "text": "",
         "pictureLink": ""
       },
       {
-        "pictureUrl": "https://github.com/plentymarkets/plugin-ceres/blob/stable/resources/images/homepage/slider2.jpg?raw=true",
+        "pictureUrl": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/slider_gebrauchtde.jpg",
+        "text": "",
+        "pictureLink": "https://marketplace.plentymarkets.com/en/plugins/templates/Gebraucht_5163"
+      },
+      {
+        "pictureUrl": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/slider2.jpg",
         "text": "",
         "pictureLink": ""
       },
       {
-        "pictureUrl": "https://github.com/plentymarkets/plugin-ceres/blob/stable/resources/images/homepage/slider3.jpg?raw=true",
+        "pictureUrl": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/slider3.jpg",
         "text": "",
         "pictureLink": ""
       }
@@ -79,19 +101,25 @@
     "recommended":
     [
       {
-        "pluginIcon": "https://raw.githubusercontent.com/plentymarkets/plugin-ceres/stable/resources/images/homepage/icon_plugin_etsy.png",
+        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_etsy.png",
         "pluginText": "Plugin for integrating the market Etsy",
         "pluginLink": "https://marketplace.plentymarkets.com/en/plugins/plentymarkets-GmbH/Etsy_4689",
         "pluginTitle": "Etsy"
       },
       {
-        "pluginIcon": "https://raw.githubusercontent.com/plentymarkets/plugin-ceres/stable/resources/images/homepage/icon_plugin_contact.png",
-        "pluginText": "Displaying contact data in the online store",
-        "pluginLink": "https://marketplace.plentymarkets.com/en/plugins/plentymarkets-gmbh/contactcard_4695",
-        "pluginTitle": "Contact Card"
+        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_amazon_en.jpg",
+        "pluginText": "Loyal customers. Inline checkout. Optimised for mobile.",
+        "pluginLink": "https://pay.amazon.com/uk/promotion?ld=SPEXDEAPA-plentymarkets-NL-XiS17",
+        "pluginTitle": "Amazon Pay"
       },
       {
-        "pluginIcon": "https://raw.githubusercontent.com/plentymarkets/plugin-ceres/stable/resources/images/homepage/icon_plugin_paypal.png",
+        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_gebrauchtde.jpg",
+        "pluginText": "Technik, Bekleidung, Medien, Haushalt, Kfz-Teile uvm. verkaufen!",
+        "pluginLink": "https://marketplace.plentymarkets.com/en/plugins/templates/Gebraucht_5163",
+        "pluginTitle": "gebraucht.de"
+      },
+      {
+        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_paypal.png",
         "pluginText": "The official PayPal plugin for plentymarkets",
         "pluginLink": "https://marketplace.plentymarkets.com/en/plugins/plentymarkets-GmbH/PayPal_4690",
         "pluginTitle": "PayPal"
