@@ -1,5 +1,5 @@
 {% set currentLang = services.sessionStorage.getLang() %}
-
+{% set homepageJson = getInternalContent("DenqbarTemplate.HomepageContent.json") %}
 {% set homepageData = homepageJson[currentLang] %}
 
 <div class="container-max mkt-homepage">
