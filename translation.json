@@ -1,5 +1,10 @@
 {
-  "sections":[],
+  "sections":[
+    {
+      "name": "MultilingualismConfig.homepage",
+      "prefix": "homepage"
+    },
+  ],
   "ignoredTranslationFiles":
   [
     "Config.properties"
