@@ -13,7 +13,7 @@ body {
   color: #333;
 }
 
-.top-bar .controls-list .control-basket .toggle-basket-preview {
+.top-bar .controls-list .control-basket .toggle-basket-preview, .navbar {
     background-color: #00305E;
     color: #fff;
 }
