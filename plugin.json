@@ -8,7 +8,7 @@
     "author"            :   "Erik Dathe, DENQBAR GmbH",
     "type"              :   "template",
     "require"           :   {
-                                "Ceres":"~4.0.1"
+                                "Ceres":"4.0.1"
                             },
     "serviceProvider"   :   "DenqbarTemplate\\Providers\\DenqbarTemplateServiceProvider",
     "dataProviders"     :
