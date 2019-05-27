@@ -2,7 +2,7 @@
     "marketplaceName"   : {"de":"DENQBAR Template","en":"DENQBAR Template"},
     "license"           : "AGPL-3.0",
     "price"             : 5000.00,
-    "shortDescription"  : { "de": "DENQBAR Template - Ein Template für Ceres 3.", "en": "DENQBAR Template - A template for Ceres 3." },
+    "shortDescription"  : { "de": "DENQBAR Template - Ein Template für Ceres 4.", "en": "DENQBAR Template - A template for Ceres 4." },
     "categories"        : ["3518"],
     "keywords"          : ["plentymarkets", "plugins", "layout", "theme", "ceres"]
 }
