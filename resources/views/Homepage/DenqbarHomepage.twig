@@ -1,6 +1,29 @@
 {% set currentLang = services.sessionStorage.getLang() %}
 {% set homepageData = homepageJson[currentLang] %}
 
+<div class="carousel slide" data-interval="5000" data-ride="carousel" id="carousel-example">
+	<div class="carousel-inner" id="carousel-content">
+		{% for picture in homepageData.pictures %}
+		<div class="carousel-item text-muted {% if loop.first %}active{% endif %}">
+			<a href="{{ picture.pictureLink }}">
+				<img class="img-fluid" src="{{ picture.pictureUrl }}" />
+			</a>
+			<div class="carousel-caption">
+				<h2>{% autoescape false %}{{ picture.text }}{% endautoescape %}</h2>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	<a class="left carousel-control carousel-control-prev" href="#carousel-example" data-slide="prev">
+		<i class="icon-prev  fa fa-angle-left">
+		</i>
+	</a>
+	<a class="right carousel-control carousel-control-next" href="#carousel-example" data-slide="next">
+		<i class="icon-next fa fa-angle-right">
+		</i>
+	</a>
+</div>
+
 <p>{# slider (full width) #}</p>
 <div class="contentpageSlider" data-plenty="UI.addContentPageSlider(this)">
 	{# <a href="/inverter-stromerzeuger/"><div class="slide slide-1" style="background-image: url('/images/gallery/slider2015/slider-denqbar-00i.jpg');">&nbsp;</div></a> #}
