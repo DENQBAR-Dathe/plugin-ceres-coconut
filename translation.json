@@ -1,12 +1,12 @@
 {
   "sections":[
     {
-      "name": "MultilingualismConfig.homepage",
-      "prefix": "homepage"
+      "name": "MultilingualismConfig.homepage2",
+      "prefix": "homepage2"
     },
     {
-      "name": "MultilingualismConfig.footer",
-      "prefix": "footer"
+      "name": "MultilingualismConfig.footer2",
+      "prefix": "footer2"
     },
   ],
   "ignoredTranslationFiles":
