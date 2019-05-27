@@ -4,6 +4,10 @@
       "name": "MultilingualismConfig.homepage",
       "prefix": "homepage"
     },
+    {
+      "name": "MultilingualismConfig.footer",
+      "prefix": "footer"
+    },
   ],
   "ignoredTranslationFiles":
   [
