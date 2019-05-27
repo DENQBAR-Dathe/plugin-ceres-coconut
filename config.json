@@ -124,6 +124,450 @@
                 }
             }
         },
+        "Config.HomepageTab": {
+            "label": "Config.homepageTab",
+            "formFields": {
+                "homepage.showShopBuilderContent": {
+                    "type": "checkBox",
+                    "required": false,
+                    "label": "Config.homepageShowShopBuilderContentLabel",
+                    "options": {
+                        "defaultValue": "false"
+                    }
+                },
+                "default.homepage": {
+                    "type": "checkBox",
+                    "required": false,
+                    "label": "Config.defaultHomepageLabel",
+                    "options": {
+                        "defaultValue": "true"
+                    }
+                },
+                "homepage.sliderItemId1": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.homepageSliderItemId1Label",
+                    "options": {}
+                },
+                "homepage.sliderImageUrl1": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.homepageSliderImageUrl1Label",
+                    "options": {}
+                },
+                "homepage.sliderItemId2": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.homepageSliderItemId2Label",
+                    "options": {}
+                },
+                "homepage.sliderImageUrl2": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.homepageSliderImageUrl2Label",
+                    "options": {}
+                },
+                "homepage.sliderItemId3": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.homepageSliderItemId3Label",
+                    "options": {}
+                },
+                "homepage.sliderImageUrl3": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.homepageSliderImageUrl3Label",
+                    "options": {}
+                },
+                "homepage.heroExtraItemId1": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.homepageHeroExtraItemId1Label",
+                    "options": {
+                        "defaultValue": ""
+                    }
+                },
+                "homepage.heroExtraImageUrl1": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.homepageHeroExtraImageUrl1Label",
+                    "options": {}
+                },
+                "homepage.heroExtraItemId2": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.homepageHeroExtraItemId2Label",
+                    "options": {
+                        "defaultValue": ""
+                    }
+                },
+                "homepage.heroExtraImageUrl2": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.homepageHeroExtraImageUrl2Label",
+                    "options": {}
+                },
+                "homepage.homepageCategory1": {
+                    "type": "categoryPicker",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.homepageHomepageCategory1Label",
+                    "options": {}
+                },
+                "homepage.homepageCategory2": {
+                    "type": "categoryPicker",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.homepageHomepageCategory2Label",
+                    "options": {}
+                },
+                "homepage.homepageCategory3": {
+                    "type": "categoryPicker",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.homepageHomepageCategory3Label",
+                    "options": {}
+                },
+                "homepage.homepageCategory4": {
+                    "type": "categoryPicker",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.homepageHomepageCategory4Label",
+                    "options": {}
+                },
+                "homepage.homepageCategory5": {
+                    "type": "categoryPicker",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.homepageHomepageCategory5Label",
+                    "options": {}
+                },
+                "homepage.homepageCategory6": {
+                    "type": "categoryPicker",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.homepageHomepageCategory6Label",
+                    "options": {}
+                }
+            }
+        },
+        "Config.HeaderTab": {
+            "label": "Config.headerTab",
+            "formFields": {
+                "header.show_navbars": {
+                    "type": "selectBox",
+                    "required": false,
+                    "label": "Config.headerShowNavbarsLabel",
+                    "options": {
+                        "defaultValue": "top",
+                        "selectBoxValues": [
+                            {
+                                "value": "top",
+                                "caption": "Config.headerShowNavbarsTop"
+                            },
+                            {
+                                "value": "side",
+                                "caption": "Config.headerShowNavbarsSide"
+                            },
+                            {
+                                "value": "both",
+                                "caption": "Config.headerShowNavbarsBoth"
+                            }
+                        ]
+                    }
+                },
+                "header.fixed_navbar": {
+                    "type": "checkBox",
+                    "required": false,
+                    "label": "Config.headerFixedNavbarLabel",
+                    "options": {
+                        "defaultValue": "true"
+                    },
+                    "deprecated": true
+                },
+                "header.show_category_types": {
+                    "type": "multiCheckBox",
+                    "required": false,
+                    "label": "Config.headerShowCategoryTypesLabel",
+                    "options": {
+                        "defaultValue": "all",
+                        "checkBoxValues": [
+                            {
+                                "value": "item",
+                                "caption": "Config.headerShowCategoryTypesItem"
+                            },
+                            {
+                                "value": "content",
+                                "caption": "Config.headerShowCategoryTypesContent"
+                            },
+                            {
+                                "value": "blog",
+                                "caption": "Config.headerShowCategoryTypesBlog"
+                            }
+                        ]
+                    }
+                },
+                "header.basket_values": {
+                    "type": "selectBox",
+                    "required": false,
+                    "label": "Config.headerBasketValuesLabel",
+                    "deprecated": true,
+                    "options": {
+                        "defaultValue": "sum",
+                        "selectBoxValues": [
+                            {
+                                "value": "sum",
+                                "caption": "Config.headerBasketValuesSum"
+                            },
+                            {
+                                "value": "quantity",
+                                "caption": "Config.headerBasketValuesQuantity"
+                            },
+                            {
+                                "value": "both",
+                                "caption": "Config.headerBasketValuesBoth"
+                            }
+                        ]
+                    }
+                },
+                "header.megamenu_levels": {
+                    "type": "selectBox",
+                    "required": false,
+                    "label": "Config.headerMegamenuLevelsLabel",
+                    "deprecated": true,
+                    "options": {
+                        "defaultValue": "1",
+                        "selectBoxValues": [
+                            {
+                                "value": "1",
+                                "caption": "Config.headerMegamenuLevels1"
+                            },
+                            {
+                                "value": "2",
+                                "caption": "Config.headerMegamenuLevels2"
+                            },
+                            {
+                                "value": "3",
+                                "caption": "Config.headerMegamenuLevels3"
+                            },
+                            {
+                                "value": "4",
+                                "caption": "Config.headerMegamenuLevels4"
+                            }
+                        ]
+                    }
+                },
+                "header.megamenu_items_stage_1": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.headerMegamenuItemsStage1Label",
+                    "deprecated": true,
+                    "options": {
+                        "defaultValue": "30"
+                    }
+                },
+                "header.megamenu_items_stage_2": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.headerMegamenuItemsStage2Label",
+                    "deprecated": true,
+                    "options": {
+                        "defaultValue": "3"
+                    }
+                },
+                "header.megamenu_items_stage_3": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.headerMegamenuItemsStage3Label",
+                    "deprecated": true,
+                    "options": {
+                        "defaultValue": "2"
+                    }
+                }
+            }
+        },
+        "Config.FooterTab": {
+            "label": "Config.footerTab",
+            "formFields": {
+                "footer.to_top_button": {
+                    "type": "selectBox",
+                    "required": false,
+                    "label": "Config.footerToTopButtonLabel",
+                    "options": {
+                        "defaultValue": "right",
+                        "selectBoxValues": [
+                            {
+                                "value": "right",
+                                "caption": "Config.footerToTopButtonRight"
+                            },
+                            {
+                                "value": "bottom",
+                                "caption": "Config.footerToTopButtonBottom"
+                            }
+                        ]
+                    }
+                },
+                "footer.number_of_features": {
+                    "type": "selectBox",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.footerNumberOfFeaturesLabel",
+                    "options": {
+                        "defaultValue": "3",
+                        "selectBoxValues": [
+                            {
+                                "value": "0",
+                                "caption": "Config.footerNumberOfFeatures0"
+                            },
+                            {
+                                "value": "1",
+                                "caption": "Config.footerNumberOfFeatures1"
+                            },
+                            {
+                                "value": "2",
+                                "caption": "Config.footerNumberOfFeatures2"
+                            },
+                            {
+                                "value": "3",
+                                "caption": "Config.footerNumberOfFeatures3"
+                            }
+                        ]
+                    }
+                },
+                "footer.store_feature_1": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.footerStoreFeature1Label",
+                    "options": {
+                        "defaultValue": "Delivery period approx. 1 to 3 business days"
+                    }
+                },
+                "footer.store_feature_2": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.footerStoreFeature2Label",
+                    "options": {
+                        "defaultValue": "Free shipping & return"
+                    }
+                },
+                "footer.store_feature_3": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.footerStoreFeature3Label",
+                    "options": {
+                        "defaultValue": "100-day return policy"
+                    }
+                },
+                "footer.number_of_cols": {
+                    "type": "selectBox",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.footerNumberOfColsLabel",
+                    "options": {
+                        "defaultValue": "3",
+                        "selectBoxValues": [
+                            {
+                                "value": "1",
+                                "caption": "Config.footerNumberOfCols1"
+                            },
+                            {
+                                "value": "2",
+                                "caption": "Config.footerNumberOfCols2"
+                            },
+                            {
+                                "value": "3",
+                                "caption": "Config.footerNumberOfCols3"
+                            }
+                        ]
+                    }
+                },
+                "footer.col_1_title": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.footerCol1TitleLabel",
+                    "options": {
+                        "defaultValue": "Shop"
+                    }
+                },
+                "footer.col_1_categories": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.footerCol1CategoriesLabel",
+                    "options": {
+                        "defaultValue": ""
+                    }
+                },
+                "footer.col_2_title": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.footerCol2TitleLabel",
+                    "options": {
+                        "defaultValue": "My account"
+                    }
+                },
+                "footer.col_2_categories": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.footerCol2CategoriesLabel",
+                    "options": {
+                        "defaultValue": ""
+                    }
+                },
+                "footer.col_3_title": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.footerCol3TitleLabel",
+                    "options": {
+                        "defaultValue": "Service"
+                    }
+                },
+                "footer.col_3_categories": {
+                    "type": "inputText",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.footerCol3CategoriesLabel",
+                    "options": {
+                        "defaultValue": ""
+                    }
+                },
+                "footer.cancellation_use_pdf": {
+                    "type": "checkBox",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.footerCancellationUsePdfLabel",
+                    "options": {
+                        "defaultValue": false
+                    }
+                },
+                "footer.cancellation_pdf_path": {
+                    "type": "inputFile",
+                    "required": false,
+                    "deprecated": true,
+                    "label": "Config.footerCancellationPdfPathLabel",
+                    "options": {
+                        "defaultValue": ""
+                    }
+                }
+            }
+        },
         "Config.ResultFieldsTab": {
             "label": "Config.ResultFieldsTab",
             "formFields": {
