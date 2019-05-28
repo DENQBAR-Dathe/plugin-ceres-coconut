@@ -8,7 +8,6 @@
   ],
   "ignoredTranslationFiles":
   [
-    "MultilingualismConfig.properties",
     "Config.properties"
   ]
 }
