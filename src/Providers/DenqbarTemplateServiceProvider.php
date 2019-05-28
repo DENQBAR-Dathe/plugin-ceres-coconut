@@ -2,9 +2,6 @@
 
 namespace DenqbarTemplate\Providers;
 
-use Ceres\Caching\NavigationCacheSettings;
-use Ceres\Caching\SideNavigationCacheSettings;
-use IO\Services\ContentCaching\Services\Container;
 use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Events\Dispatcher;
 use Plenty\Plugin\Templates\Twig;
@@ -29,15 +26,11 @@ class DenqbarTemplateServiceProvider extends ServiceProvider
 
     public function boot(Twig $twig, Dispatcher $dispatcher, ConfigRepository $config)
     {
-
         $enabledOverrides = explode(", ", $config->get("DenqbarTemplate.templates.override"));
 
         // Override partials
         $dispatcher->listen('IO.init.templates', function (Partial $partial) use ($enabledOverrides)
         {
-            pluginApp(Container::class)->register('Ceres::PageDesign.Partials.Header.NavigationList.twig', NavigationCacheSettings::class);
-            pluginApp(Container::class)->register('Ceres::PageDesign.Partials.Header.SideNavigation.twig', SideNavigationCacheSettings::class);
-
             $partial->set('head', 'Ceres::PageDesign.Partials.Head');
             $partial->set('header', 'Ceres::PageDesign.Partials.Header.Header');
             $partial->set('page-design', 'Ceres::PageDesign.PageDesign');
@@ -45,7 +38,7 @@ class DenqbarTemplateServiceProvider extends ServiceProvider
 
             if (in_array("head", $enabledOverrides) || in_array("all", $enabledOverrides))
             {
-                $partial->set('head', 'Ceres::PageDesign.Partials.Head');
+                $partial->set('head', 'DenqbarTemplate::PageDesign.Partials.Head');
             }
 
             if (in_array("header", $enabledOverrides) || in_array("all", $enabledOverrides))
@@ -55,7 +48,7 @@ class DenqbarTemplateServiceProvider extends ServiceProvider
 
             if (in_array("page_design", $enabledOverrides) || in_array("all", $enabledOverrides))
             {
-                $partial->set('page-design', 'Ceres::PageDesign.PageDesign');
+                $partial->set('page-design', 'DenqbarTemplate::PageDesign.PageDesign');
             }
 
             if (in_array("footer", $enabledOverrides) || in_array("all", $enabledOverrides))
@@ -116,7 +109,7 @@ class DenqbarTemplateServiceProvider extends ServiceProvider
 
             $dispatcher->listen('IO.tpl.checkout', function (TemplateContainer $container)
             {
-                $container->setTemplate('DenqbarTemplate::Checkout.Checkout');
+                $container->setTemplate('DenqbarTemplate::Checkout.CheckoutView');
                 return false;
             }, self::PRIORITY);
         }
@@ -182,7 +175,7 @@ class DenqbarTemplateServiceProvider extends ServiceProvider
 
             $dispatcher->listen('IO.tpl.my-account', function (TemplateContainer $container)
             {
-                $container->setTemplate('DenqbarTemplate::MyAccount.MyAccount');
+                $container->setTemplate('DenqbarTemplate::MyAccount.MyAccountView');
                 return false;
             }, self::PRIORITY);
         }
@@ -319,61 +312,51 @@ class DenqbarTemplateServiceProvider extends ServiceProvider
             }, self::PRIORITY);
         }
 
-        $enabledResultFields = explode(", ", $config->get("DenqbarTemplate.result_fields.override"));
+        $enabledResultFields = [];
 
-        // Override auto complete list item result fields
-        if (in_array("auto_complete_list_item", $enabledResultFields) || in_array("all", $enabledResultFields))
+        if(!empty($config->get("DenqbarTemplate.result_fields.override")))
         {
-
-          $dispatcher->listen( 'IO.ResultFields.AutoCompleteListItem', function(ResultFieldTemplate $templateContainer)
-          {
-              $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_AUTOCOMPLETE_ITEM_LIST, 'DenqbarTemplate::ResultFields.AutoCompleteListItem');
-              return false;
-          });
+            $enabledResultFields = explode(", ", $config->get("DenqbarTemplate.result_fields.override"));
         }
 
-        // Override basket item result fields
-        if (in_array("basket_item", $enabledResultFields) || in_array("all", $enabledResultFields))
+        if(!empty($enabledResultFields))
         {
+            $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) use ($enabledResultFields)
+            {
+                $templatesToOverride = [];
 
-          $dispatcher->listen( 'IO.ResultFields.BasketItem', function(ResultFieldTemplate $templateContainer)
-          {
-              $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_BASKET_ITEM, 'DenqbarTemplate::ResultFields.BasketItem');
-              return false;
-          });
-        }
+                // Override list item result fields
+                if (in_array("list_item", $enabledResultFields) || in_array("all", $enabledResultFields))
+                {
+                    $templatesToOverride[ResultFieldTemplate::TEMPLATE_LIST_ITEM] = 'DenqbarTemplate::ResultFields.ListItem';
+                }
 
-        // Override category tree result fields
-        if (in_array("category_tree", $enabledResultFields) || in_array("all", $enabledResultFields))
-        {
+                // Override single item view result fields
+                if (in_array("single_item", $enabledResultFields) || in_array("all", $enabledResultFields))
+                {
+                    $templatesToOverride[ResultFieldTemplate::TEMPLATE_SINGLE_ITEM] = 'DenqbarTemplate::ResultFields.SingleItem';
+                }
 
-          $dispatcher->listen( 'IO.ResultFields.CategoryTree', function(ResultFieldTemplate $templateContainer)
-          {
-              $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_CATEGORY_TREE, 'DenqbarTemplate::ResultFields.CategoryTree');
-              return false;
-          });
-        }
+                // Override basket item result fields
+                if (in_array("basket_item", $enabledResultFields) || in_array("all", $enabledResultFields))
+                {
+                    $templatesToOverride[ResultFieldTemplate::TEMPLATE_BASKET_ITEM] = 'DenqbarTemplate::ResultFields.BasketItem';
+                }
 
-        // Override list item result fields
-        if (in_array("list_item", $enabledResultFields) || in_array("all", $enabledResultFields))
-        {
+                // Override auto complete list item result fields
+                if (in_array("auto_complete_list_item", $enabledResultFields) || in_array("all", $enabledResultFields))
+                {
+                    $templatesToOverride[ResultFieldTemplate::TEMPLATE_AUTOCOMPLETE_ITEM_LIST] = 'DenqbarTemplate::ResultFields.AutoCompleteListItem';
+                }
 
-          $dispatcher->listen( 'IO.ResultFields.ListItem', function(ResultFieldTemplate $templateContainer)
-          {
-              $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_LIST_ITEM, 'DenqbarTemplate::ResultFields.ListItem');
-              return false;
-          });
-        }
+                // Override category tree result fields
+                if (in_array("category_tree", $enabledResultFields) || in_array("all", $enabledResultFields))
+                {
+                    $templatesToOverride[ResultFieldTemplate::TEMPLATE_CATEGORY_TREE] = 'DenqbarTemplate::ResultFields.CategoryTree';
+                }
 
-        // Override single item view result fields
-        if (in_array("single_item", $enabledResultFields) || in_array("all", $enabledResultFields))
-        {
-
-          $dispatcher->listen( 'IO.ResultFields.SingleItem', function(ResultFieldTemplate $templateContainer)
-          {
-              $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_SINGLE_ITEM, 'DenqbarTemplate::ResultFields.SingleItem');
-              return false;
-          });
+                $templateContainer->setTemplates($templatesToOverride);
+            }, self::PRIORITY);
         }
     }
 }
