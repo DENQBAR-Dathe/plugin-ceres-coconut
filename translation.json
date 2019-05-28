@@ -1,12 +1,9 @@
 {
-  "sections":[
+  "sections":
+  [
     {
-      "name": "MultilingualismConfig.homepage2",
-      "prefix": "homepage2"
-    },
-    {
-      "name": "MultilingualismConfig.footer2",
-      "prefix": "footer2"
+      "name": "MultilingualismConfig.denqbarfooter",
+      "prefix": "DENQBAR Footer"
     },
   ],
   "ignoredTranslationFiles":
