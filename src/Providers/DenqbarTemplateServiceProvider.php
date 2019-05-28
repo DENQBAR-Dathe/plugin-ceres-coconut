@@ -35,8 +35,8 @@ class DenqbarTemplateServiceProvider extends ServiceProvider
         // Override partials
         $dispatcher->listen('IO.init.templates', function (Partial $partial) use ($enabledOverrides)
         {
-            pluginApp(Container::class)->register('DenqbarTemplate::PageDesign.Partials.Header.NavigationList.twig', NavigationCacheSettings::class);
-            pluginApp(Container::class)->register('DenqbarTemplate::PageDesign.Partials.Header.SideNavigation.twig', SideNavigationCacheSettings::class);
+            pluginApp(Container::class)->register('Ceres::PageDesign.Partials.Header.NavigationList.twig', NavigationCacheSettings::class);
+            pluginApp(Container::class)->register('Ceres::PageDesign.Partials.Header.SideNavigation.twig', SideNavigationCacheSettings::class);
 
             $partial->set('head', 'Ceres::PageDesign.Partials.Head');
             $partial->set('header', 'Ceres::PageDesign.Partials.Header.Header');
@@ -45,7 +45,7 @@ class DenqbarTemplateServiceProvider extends ServiceProvider
 
             if (in_array("head", $enabledOverrides) || in_array("all", $enabledOverrides))
             {
-                $partial->set('head', 'DenqbarTemplate::PageDesign.Partials.Head');
+                $partial->set('head', 'Ceres::PageDesign.Partials.Head');
             }
 
             if (in_array("header", $enabledOverrides) || in_array("all", $enabledOverrides))
@@ -55,7 +55,7 @@ class DenqbarTemplateServiceProvider extends ServiceProvider
 
             if (in_array("page_design", $enabledOverrides) || in_array("all", $enabledOverrides))
             {
-                $partial->set('page-design', 'DenqbarTemplate::PageDesign.PageDesign');
+                $partial->set('page-design', 'Ceres::PageDesign.PageDesign');
             }
 
             if (in_array("footer", $enabledOverrides) || in_array("all", $enabledOverrides))
