@@ -2,7 +2,7 @@
   "sections":
   [
     {
-      "name": "MultilingualismConfig.denqbarfooter",
+      "name": "MultilingualismConfig.denqbarFooter",
       "prefix": "denqbarFooter"
     },
   ],
