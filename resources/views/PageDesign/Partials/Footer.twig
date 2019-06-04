@@ -5,6 +5,7 @@
 {% set displayedCategories = [] %}
 {% set numberOfFeatures = config('Ceres.footer.number_of_features') %}
 {% set topButtonPosition = config('Ceres.footer.to_top_button') %}
+{% set linkGTC = services.category.get(4, lang)  %}
 {% set linkShippingCosts = services.category.get(8, lang)  %}
 {% set linkJobs = services.category.get(139, lang)  %}
 {% set linkPaymentsMethods = services.category.get(13, lang)  %}
@@ -163,7 +164,7 @@
                   <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
                     <p class="h4 margin-top-05 center">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstColHeader") }}</p>
                     <hr class="margin-top-1 margin-bottom-1 back-darkgrey" />
-                    <div><a href="{{ urls.gtc }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFirstCol02') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstCol02") }}</a></div>
+                    <div><a href="{{ services.category.getURL( linkGTC ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFirstCol02') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstCol02") }}</a></div>
                     <div><a href="{{ urls.contact }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFirstCol03') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstCol03") }}</a></div>
                     <div><a href="{{ urls.legalDisclosure }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFirstCol04') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstCol04") }}</a></div>
                     <div><a href="{{ services.category.getURL( linkJobs ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFirstCol05') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstCol05") }}</a></div>
