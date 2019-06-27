@@ -149,3 +149,138 @@ a:focus,
 .right {
 	text-align: right;
 }
+
+/* button types */
+.btn-default,
+.btn-warning {
+	background-color:#00305E;
+	color: #fff !important;
+}
+.btn-social{
+	float:left;
+	padding: 10px 0;
+	height:60px;
+	width:60px;
+	margin:5px;
+}
+.btn-facebook{
+	background-color:#3B5998;
+	color: #fff !important;
+}
+.btn-twitter{
+	background-color:#55ACEE;
+	color: #fff !important;
+}
+.btn-googleplus{
+	background-color:#DC4E41;
+	color: #fff !important;
+}
+.btn-pinterest{
+	background-color:#BD081C;
+	color: #fff !important;
+}
+.btn-youtube{
+	background-color:#CD201F;
+	color: #fff !important;
+}
+.btn-blog{
+	background-color:#E20020;
+	color: #fff !important;
+	font-size: 24px;
+	line-height:1.8em;
+}
+.link-facebook{
+	color:#3B5998;
+}
+.link-twitter{
+	color:#55ACEE;
+}
+.link-googleplus{
+	color:#DC4E41;
+}
+.link-pinterest{
+	color:#BD081C;
+}
+.btn-youtube{
+	background-color:#CD201F;
+	color: #fff !important;
+}
+.btn-social:hover{
+	background-color:#69C;
+	color:#fff !important;
+}
+.btn-primary,
+.liveSearch input[type="button"],
+.btn-success,
+.btn-info,
+.btn-danger,
+.PlentyWebshopButton,
+.PlentySubmitButton,
+.LiveSearchShowMoreArticleHint input[type="button"],
+.PlentyWebMyAccount .button,
+.PlentyWebMyAccount .inlineSubmitButton,
+.PlentyWebMyAccount .button,
+.PlentyWebMyAccount .inlineSubmitButton,
+.PlentyWebMyAccount input[type="button"] {
+	color: #fff!important;
+	background-color: #E20020;
+}
+.btn-primary:hover, .liveSearch input[type="button"]:hover,
+.btn-primary:focus, .liveSearch input[type="button"]:focus,
+.btn-primary.focus, .liveSearch input[type="button"].focus,
+.btn-primary:active, .liveSearch input[type="button"]:active,
+.btn-primary.active, .liveSearch input[type="button"].active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff!important;
+  background-color: #369;
+  outline: none;
+}
+.btn-default { background-color: #00305E; }
+.PlentyWebshopButton,
+.PlentySubmitButton,
+.LiveSearchShowMoreArticleHint input[type="button"],
+.PlentyWebMyAccount .button,
+.PlentyWebMyAccount .inlineSubmitButton,
+.PlentyWebMyAccount .button,
+.PlentyWebMyAccount .inlineSubmitButton,
+.PlentyWebMyAccount input[type="button"] { background-color: #00305E; }
+.btn-success { background-color: #3b0; }
+.btn-info { background-color: #999; }
+.btn-warning { background-color: #fc3; }
+.btn-danger { background-color: #f11; }
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active {
+	background-color:#E20020;
+	color: #FFF !important;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+a.PlentyWebshopButton:hover,
+a.PlentyWebshopButton:focus,
+.PlentySubmitButton:hover,
+.PlentySubmitButton:focus,
+.LiveSearchShowMoreArticleHint input[type="button"]:hover,
+.LiveSearchShowMoreArticleHint input[type="button"]:focus {
+	color: #fff;
+}
+.btn-link,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link:active {
+	border: none;
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
+}
