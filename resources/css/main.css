@@ -22,3 +22,45 @@ body {
   background-color: #00305E;
   color: #fff;
 }
+
+a:hover,
+a:focus,
+.basicColor a:hover,
+.basicColor a:focus,
+.btn.btn-link:hover,
+.btn.btn-link:focus,
+.back-blue a:hover,
+.back-blue a:focus,
+.back-white a:hover,
+.back-white a:focus,
+.back-grey a:hover,
+.back-grey a:focus,
+.breadcrumbs a:hover,
+.breadcrumbs a:focus{
+  color: #E20020;
+  text-decoration: none;
+}
+.back-blue{
+  background-color: #00305E;
+  color:#FFF;
+}
+.back-blue a{
+  color:#FFF;
+}
+.back-white{
+  background-color: #FFF;
+  color:#333;
+}
+.back-white a{
+  color:#00305E;
+}
+.back-grey{
+  background-color: #DEDEDE;
+  color:#333;
+}
+.back-grey a{
+  color:#00305E;
+}
+.back-darkgrey{
+  background-color: #333;
+}
