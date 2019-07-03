@@ -5,8 +5,12 @@
 {% set displayedCategories = [] %}
 {% set numberOfFeatures = config('Ceres.footer.number_of_features') %}
 {% set topButtonPosition = config('Ceres.footer.to_top_button') %}
+{% set linkLegalDisclosure = services.category.get(3, lang)  %}
 {% set linkGTC = services.category.get(4, lang)  %}
+{% set linkCancellationRights = services.category.get(5, lang)  %}
 {% set linkShippingCosts = services.category.get(8, lang)  %}
+{% set linkContact = services.category.get(9, lang)  %}
+{% set linkPrivacyPolicy = services.category.get(10, lang)  %}
 {% set linkPaymentsMethods = services.category.get(13, lang)  %}
 {% set linkAboutUs = services.category.get(17, lang)  %}
 {% set linkJobs = services.category.get(139, lang)  %}
@@ -18,107 +22,86 @@
 
 <div class="footer">
 
-    <div class="{% if topButtonPosition == "right" %}back-to-top{% else %}back-to-top-center{% endif %} hidden-sm-down">
-        <i class="fa fa-chevron-up"></i>
-    </div>
+  <div class="{% if topButtonPosition == "right" %}back-to-top{% else %}back-to-top-center{% endif %} hidden-sm-down">
+    <i class="fa fa-chevron-up"></i>
+  </div>
 
-    <div class="to-top d-md-none" v-scroll-to-top>
-        <i class="fa fa-arrow-up" aria-hidden="true"></i>
-    </div>
+  <div class="to-top d-md-none" v-scroll-to-top>
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </div>
 
-        <div class="back-blue margin-top-1">
-          <div class="container">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <p class="h4 margin-top-05 center">{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasonsHeader") }}</p>
-              <hr class="margin-top-1 margin-bottom-1" />
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div><span class="fa fa-check-square">&nbsp;</span>{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasons01") }}</div>
-                <div><span class="fa fa-check-square">&nbsp;</span>{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasons02") }}</div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div><span class="fa fa-check-square">&nbsp;</span>{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasons03") }}</div>
-                <div><span class="fa fa-check-square">&nbsp;</span>{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasons04") }}</div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div><span class="fa fa-check-square">&nbsp;</span>{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasons05") }}</div>
-                <div><span class="fa fa-check-square">&nbsp;</span>{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasons06") }}</div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div><span class="fa fa-check-square">&nbsp;</span>{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasons07") }}</div>
-                <div><span class="fa fa-check-square">&nbsp;</span>{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasons08") }}</div>
-              </div>
-            </div>
-          </div>
+  <div class="back-blue margin-top-1">
+    <div class="container">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <p class="h4 margin-top-05 center">{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasonsHeader") }}</p>
+        <hr class="margin-top-1 margin-bottom-1" />
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div><span class="fa fa-check-square">&nbsp;</span>{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasons01") }}</div>
+          <div><span class="fa fa-check-square">&nbsp;</span>{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasons02") }}</div>
         </div>
-
-        <div class="back-grey">
-          <div class="container">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                <p class="h4 margin-top-05 center">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstColHeader") }}</p>
-                <hr class="margin-top-1 margin-bottom-1 back-darkgrey" />
-                <div><a href="{{ services.category.getURL( linkAboutUs ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFirstCol01') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstCol01") }}</a></div>
-                <div><a href="{{ services.category.getURL( linkGTC ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFirstCol02') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstCol02") }}</a></div>
-                <div><a href="{{ urls.contact }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFirstCol03') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstCol03") }}</a></div>
-                <div><a href="{{ urls.legalDisclosure }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFirstCol04') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstCol04") }}</a></div>
-                <div><a href="{{ services.category.getURL( linkJobs ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFirstCol05') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstCol05") }}</a></div>
-              </div>
-              <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                <p class="h4 margin-top-05 center">{{ trans("DenqbarTemplate::Template.denqbarFooterSecondColHeader") }}</p>
-                <hr class="margin-top-1 margin-bottom-1 back-darkgrey" />
-                <div><a href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterSecondCol01') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterSecondCol01") }}</a></div>
-                <div><a href="{{ services.category.getURL( linkShippingCosts ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterSecondCol02') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterSecondCol02") }}</a></div>
-                <div><a href="{{ urls.cancellationForm }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterSecondCol03') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterSecondCol03") }}</a></div>
-              </div>
-              <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                <p class="h4 margin-top-05 center">{{ trans("DenqbarTemplate::Template.denqbarFooterThirdColHeader") }}</p>
-                <hr class="margin-top-1 margin-bottom-1 back-darkgrey" />
-                <div><a target="_blank" href="https://www.trustedshops.de/bewertung/info_X359FE6555DFBB5649D538D5569CC77EF.html" title="{{ trans('DenqbarTemplate::Template.denqbarFooterThirdCol03') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterThirdCol01") }}</a></div>
-                <div><a href="{{ services.category.getURL( linkFAQ ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterThirdCol02') }}">{{ trans('DenqbarTemplate::Template.denqbarFooterThirdCol02') }}</a></div>
-              </div>
-              <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                <p class="h4 margin-top-05 center">{{ trans("DenqbarTemplate::Template.denqbarFooterFourthColHeader") }}</p>
-                <hr class="margin-top-1 margin-bottom-1 back-darkgrey" />
-                <div><a href="{{ urls.privacyPolicy }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFourthCol01') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFourthCol01") }}</a></div>
-                <div><a href="{{ urls.privacyPolicy }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFourthCol02') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFourthCol02") }}</a></div>
-                <div><a href="https://www.trustedshops.com/shop/certificate.php?shop_id=X359FE6555DFBB5649D538D5569CC77EF" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFourthCol03') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFourthCol03") }}</a></div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 center">
-                <p class="h4 margin-top-05 center">{{ trans("DenqbarTemplate::Template.denqbarFooterFifthColHeader") }}</p>
-                <hr class="margin-top-1 margin-bottom-1 back-darkgrey" />
-                <div><a class="btn btn-social btn-facebook" href="http://www.facebook.com/pages/Denqbar/355133387101" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFifthCol08') }}" target="_blank"><span class="fa fa-facebook fa-3x"></span></a></div>
-                <div><a class="btn btn-social btn-twitter" href="http://www.twitter.com/denqbar/" target="_blank" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFifthCol09') }}"><span class="fa fa-twitter fa-3x"></span></a></div>
-                <div><a class="btn btn-social btn-pinterest" href="http://pinterest.com/denqbar/" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFifthCol11') }}" target="_blank"><span class="fa fa-pinterest fa-3x"></span></a></div>
-                <div><a class="btn btn-social btn-youtube" href="http://www.youtube.com/user/denqbar/videos" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFifthCol12') }}" target="_blank"><span class="fa fa-youtube fa-3x"></span></a></div>
-                <div><a class="btn btn-social btn-instagram" href="https://www.instagram.com/denqbar/" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFifthCol13') }}" target="_blank"><span class="fa fa-instagram fa-3x"></span></a></div>
-              </div>
-            </div>
-          </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div><span class="fa fa-check-square">&nbsp;</span>{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasons03") }}</div>
+          <div><span class="fa fa-check-square">&nbsp;</span>{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasons04") }}</div>
         </div>
-
-        {% set cat = services.category.get(config('Ceres.global.category.legal_disclosure')) %}
-        <div class="copyright text-center my-3">
-            <div class="static-link-list">
-                {% autoescape false %}
-                    <a href="{{ urls.cancellationRights }}">{{ trans("Ceres::Template.footerCancellationRight", {"hyphen": "&shy;"}) }}</a>
-                    {% if config("Ceres.footer.cancellation_use_pdf") == "true" %}
-                        <a href="{{ config('Ceres.footer.cancellation_pdf_path') }}" target="_blank">{{ trans("Ceres::Template.footerCancellationForm", {"hyphen": "&shy;"}) }}</a>
-                    {% else %}
-                        <a href="{{ urls.cancellationForm }}">{{ trans("Ceres::Template.footerCancellationForm", {"hyphen": "&shy;"}) }}</a>
-                    {% endif %}
-                    <a href="{{ urls.legalDisclosure }}">{{ trans("Ceres::Template.footerLegalDisclosure") }}</a>
-                    <a href="{{ urls.privacyPolicy }}">{{ trans("Ceres::Template.footerPrivacyPolicy", {"hyphen": "&shy;"}) }}</a>
-                    <a href="{{ urls.gtc }}">{{ trans("Ceres::Template.footerGtc") }}</a>
-                    {% if config("Ceres.contact.shop_mail") | length > 0 and config("Ceres.contact.shop_mail") != "your@email.com" %}
-                        <a href="{{ urls.contact }}">{{ trans("Ceres::Template.footerContact") }}</a>
-                    {% endif %}
-                {% endautoescape %}
-            </div>
-
-            <br>
-            <small>&copy; Copyright {{ "now" | date("Y") }} | {{ trans("Ceres::Template.footerAllRightsReserved") }}</small>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div><span class="fa fa-check-square">&nbsp;</span>{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasons05") }}</div>
+          <div><span class="fa fa-check-square">&nbsp;</span>{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasons06") }}</div>
         </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div><span class="fa fa-check-square">&nbsp;</span>{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasons07") }}</div>
+          <div><span class="fa fa-check-square">&nbsp;</span>{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasons08") }}</div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div class="back-grey">
+    <div class="container">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+          <p class="h4 margin-top-05 center">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstColHeader") }}</p>
+          <hr class="margin-top-1 margin-bottom-1 back-darkgrey" />
+          <div><a href="{{ services.category.getURL( linkAboutUs ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFirstCol01') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstCol01") }}</a></div>
+          <div><a href="{{ services.category.getURL( linkGTC ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFirstCol02') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstCol02") }}</a></div>
+          <div><a href="{{ services.category.getURL( linkContact ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFirstCol03') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstCol03") }}</a></div>
+          <div><a href="{{ services.category.getURL( linkLegalDisclosure ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFirstCol04') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstCol04") }}</a></div>
+          <div><a href="{{ services.category.getURL( linkJobs ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFirstCol05') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFirstCol05") }}</a></div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+          <p class="h4 margin-top-05 center">{{ trans("DenqbarTemplate::Template.denqbarFooterSecondColHeader") }}</p>
+          <hr class="margin-top-1 margin-bottom-1 back-darkgrey" />
+          <div><a href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterSecondCol01') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterSecondCol01") }}</a></div>
+          <div><a href="{{ services.category.getURL( linkShippingCosts ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterSecondCol02') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterSecondCol02") }}</a></div>
+          <div><a href="{{ services.category.getURL( linkCancellationRights ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterSecondCol03') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterSecondCol03") }}</a></div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+          <p class="h4 margin-top-05 center">{{ trans("DenqbarTemplate::Template.denqbarFooterThirdColHeader") }}</p>
+          <hr class="margin-top-1 margin-bottom-1 back-darkgrey" />
+          <div><a target="_blank" href="https://www.trustedshops.de/bewertung/info_X359FE6555DFBB5649D538D5569CC77EF.html" title="{{ trans('DenqbarTemplate::Template.denqbarFooterThirdCol03') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterThirdCol01") }}</a></div>
+          <div><a href="{{ services.category.getURL( linkFAQ ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterThirdCol02') }}">{{ trans('DenqbarTemplate::Template.denqbarFooterThirdCol02') }}</a></div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+          <p class="h4 margin-top-05 center">{{ trans("DenqbarTemplate::Template.denqbarFooterFourthColHeader") }}</p>
+          <hr class="margin-top-1 margin-bottom-1 back-darkgrey" />
+          <div><a href="{{ services.category.getURL( linkPrivacyPolicy ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFourthCol01') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFourthCol01") }}</a></div>
+          <div><a href="{{ services.category.getURL( linkPrivacyPolicy ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFourthCol02') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFourthCol02") }}</a></div>
+          <div><a href="https://www.trustedshops.com/shop/certificate.php?shop_id=X359FE6555DFBB5649D538D5569CC77EF" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFourthCol03') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFourthCol03") }}</a></div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 center">
+          <p class="h4 margin-top-05 center">{{ trans("DenqbarTemplate::Template.denqbarFooterFifthColHeader") }}</p>
+          <hr class="margin-top-1 margin-bottom-1 back-darkgrey" />
+          <div><a class="btn btn-social btn-facebook" href="http://www.facebook.com/pages/Denqbar/355133387101" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFifthCol08') }}" target="_blank"><span class="fa fa-facebook fa-3x"></span></a></div>
+          <div><a class="btn btn-social btn-twitter" href="http://www.twitter.com/denqbar/" target="_blank" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFifthCol09') }}"><span class="fa fa-twitter fa-3x"></span></a></div>
+          <div><a class="btn btn-social btn-pinterest" href="http://pinterest.com/denqbar/" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFifthCol11') }}" target="_blank"><span class="fa fa-pinterest fa-3x"></span></a></div>
+          <div><a class="btn btn-social btn-youtube" href="http://www.youtube.com/user/denqbar/videos" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFifthCol12') }}" target="_blank"><span class="fa fa-youtube fa-3x"></span></a></div>
+          <div><a class="btn btn-social btn-instagram" href="https://www.instagram.com/denqbar/" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFifthCol13') }}" target="_blank"><span class="fa fa-instagram fa-3x"></span></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <small>&copy; Copyright DENQBAR {{ "now" | date("Y") }} | {{ trans("Ceres::Template.footerAllRightsReserved") }}</small>
 </div>
 {% else %}
     <div class="footer container-max">
