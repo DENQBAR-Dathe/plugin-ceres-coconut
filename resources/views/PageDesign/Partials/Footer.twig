@@ -99,11 +99,20 @@
       </div>
     </div>
   </div>
-
-  <br>
-  <small>{{ trans("DenqbarTemplate::Template.denqbarFooterAllPriceIncludeVAT") }}</small>
-  <br>
-  <small>&copy; {{ "now" | date("Y") }} DENQBAR | {{ trans("DenqbarTemplate::Template.denqbarFooterAllRightsReserved") }}</small>
+  <div class="back-grey">
+    <div class="container">
+      <div class="center">
+        {{ trans("DenqbarTemplate::Template.denqbarFooterAllPriceIncludeVAT") }}
+      </div>
+    </div>	
+  </div>
+  <div class="back-blue">
+    <div class="container">
+      <div class="center">
+        Copyright &copy; 2004-{{ "now" | date("Y") }} DENQBAR GmbH | {{ trans("DenqbarTemplate::Template.denqbarFooterAllRightsReserved") }}
+      </div>
+    </div>
+  </div>
 </div>
 {% else %}
     <div class="footer container-max">
