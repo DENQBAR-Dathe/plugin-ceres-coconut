@@ -149,3 +149,65 @@ a:focus,
 .right {
 	text-align: right;
 }
+
+/* footer */
+footer {
+	color:#333;
+}
+footer a{
+	color:#333 !important;
+}
+footer a:hover,
+footer a:focus {
+	color:#E20020 !important;;
+}
+footer strong {
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #444;
+	text-rendering: optimizelegibility;
+}
+footer hr {
+	margin: 10px 0;
+}
+.payment_img{
+	float:left;
+	width:150px;
+	height:58px;
+}
+.payment_paypal {
+    background-image: url("/images/gallery/payment/payment_paypal.png");
+}
+.payment_paypal:hover {
+    background-image: url("/images/gallery/payment/payment_paypal_hover.png");
+}
+.payment_sofort {
+    background-image: url("/images/gallery/payment/payment_sofort.png");
+}
+.payment_sofort:hover {
+    background-image: url("/images/gallery/payment/payment_sofort_hover.png");
+}
+.payment_credit{
+    background-image: url("/images/gallery/payment/payment_kredit.png");
+}
+.payment_credit:hover {
+    background-image: url("/images/gallery/payment/payment_kredit_hover.png");
+}
+.payment_purchase {
+    background-image: url("/images/gallery/payment/payment_rechnung.png");
+}
+.payment_purchase:hover {
+    background-image: url("/images/gallery/payment/payment_rechnung_hover.png");
+}
+.payment_amazon {
+    background-image: url("/images/gallery/payment/payment_amazon.png");
+}
+.payment_amazon:hover {
+    background-image: url("/images/gallery/payment/payment_amazon_hover.png");
+}
+.payment_bank {
+    background-image: url("/images/gallery/payment/payment_bank.png");
+}
+.payment_bank:hover {
+    background-image: url("/images/gallery/payment/payment_bank_hover.png");
+}
