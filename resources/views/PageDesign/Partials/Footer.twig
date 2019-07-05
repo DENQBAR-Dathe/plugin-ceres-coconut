@@ -101,10 +101,40 @@
   </div>
   <div class="back-grey">
     <div class="container">
+      <div class="col-lg-12 col-md-10 col-sm-12 col-xs-12">
+        <p class="h4 margin-top-05 center">{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentH01') }}</p>
+        <hr class="margin-top-1 margin-bottom-1 back-darkgrey" />
+        <ul class="image-list">
+          <li>
+  					<a class="payment_paypal payment_img img-responsive" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentPayPal') }}" data-toggle="tooltip" data-placement="top"></a>
+  				</li>
+          {% if lang == "de" %}
+  				<li>
+  					<a class="payment_sofort payment_img img-responsive" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentSofort') }}" data-toggle="tooltip" data-placement="top"></a>
+  				</li>
+          <li>
+  					<a class="payment_purchase payment_img img-responsive" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentPurchase') }}" data-toggle="tooltip" data-placement="top"></a>
+  				</li>
+          {% endif %}
+  				<li>
+  					<a class="payment_credit payment_img img-responsive" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentCredit') }}" data-toggle="tooltip" data-placement="top"></a>
+  				</li>
+  				<li>
+  					<a class="payment_amazon payment_img img-responsive" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentAmazonPay') }}" data-toggle="tooltip" data-placement="top"></a>
+  				</li>
+  				<li>
+  					<a class="payment_bank payment_img {{ trans('DenqbarTemplate::Template.denqbarFooterPaymentLang') }} img-responsive" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentBankTransfer') }}" data-toggle="tooltip" data-placement="top"></a>
+  				</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="back-grey">
+    <div class="container">
       <div class="center">
         {{ trans("DenqbarTemplate::Template.denqbarFooterAllPriceIncludeVAT") }}
       </div>
-    </div>	
+    </div>
   </div>
   <div class="back-blue">
     <div class="container">
