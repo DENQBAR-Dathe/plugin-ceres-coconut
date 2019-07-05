@@ -211,3 +211,15 @@ footer hr {
 .payment_bank:hover {
     background-image: url("/images/gallery/payment/payment_bank_hover.png");
 }
+.payment_bank_en {
+    background-image: url("/images/gallery/payment/payment_bank.png");
+}
+.payment_bank_en:hover {
+    background-image: url("/images/gallery/payment/payment_bank_hover.png");
+}
+.payment_bank_fr {
+    background-image: url("/images/gallery/payment/payment_bank.png");
+}
+.payment_bank_fr:hover {
+    background-image: url("/images/gallery/payment/payment_bank_hover.png");
+}
