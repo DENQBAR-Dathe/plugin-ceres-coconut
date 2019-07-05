@@ -101,7 +101,8 @@
   </div>
 
   <br>
-  <small>&copy; Copyright DENQBAR {{ "now" | date("Y") }} | {{ trans("Ceres::Template.footerAllRightsReserved") }}</small>
+  <small>{{ trans("DenqbarTemplate::Template.footerAllPriceIncludeVAT") }}</small>
+  <small>&copy; {{ "now" | date("Y") }} DENQBAR | {{ trans("DenqbarTemplate::Template.footerAllRightsReserved") }}</small>
 </div>
 {% else %}
     <div class="footer container-max">
