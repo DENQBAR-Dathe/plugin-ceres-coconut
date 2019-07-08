@@ -1,4 +1,5 @@
 {% set currentLang = services.sessionStorage.getLang() %}
+{% set homepageJson = 'HomepageContent.json') %}
 {% set homepageData = homepageJson[currentLang] %}
 
 <div class="carousel slide" data-interval="5000" data-ride="carousel" id="carousel-example">
