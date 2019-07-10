@@ -411,6 +411,26 @@ a:focus,
 	margin: 2px 12px;
 	vertical-align: middle;
 }
+/* footer */
+.footer {
+	color:#333;
+}
+.footer a{
+	color:#333 !important;
+}
+.footer a:hover,
+.footer a:focus {
+	color:#E20020 !important;;
+}
+.footer strong {
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #444;
+	text-rendering: optimizelegibility;
+}
+.footer hr {
+	margin: 10px 0;
+}
 /* button */
 .btn,
 .PlentyWebshopButton,
@@ -562,6 +582,10 @@ fieldset[disabled] .btn-default.active {
 	font-size: 24px;
 	line-height:1.8em;
 }
+.btn-instagram{
+  background-color:#cc3366;
+  color:#fff!important
+}
 .btn-social:hover{
 	background-color:#69C;
 	color:#fff !important;
@@ -652,26 +676,6 @@ a.PlentyWebshopButton:focus,
 	-webkit-box-shadow: none;
 	   -moz-box-shadow: none;
 	        box-shadow: none;
-}
-/* footer */
-.footer {
-	color:#333;
-}
-.footer a{
-	color:#333 !important;
-}
-.footer a:hover,
-.footer a:focus {
-	color:#E20020 !important;;
-}
-.footer strong {
-	font-weight: normal;
-	text-transform: uppercase;
-	color: #444;
-	text-rendering: optimizelegibility;
-}
-.footer hr {
-	margin: 10px 0;
 }
 .payment_img{
 	float:left;
