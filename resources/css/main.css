@@ -560,6 +560,10 @@ fieldset[disabled] .btn-default.active {
 	font-size: 24px;
 	line-height:1.8em;
 }
+.btn-social:hover{
+	background-color:#69C;
+	color:#fff !important;
+}
 .link-facebook{
 	color:#3B5998;
 }
@@ -571,14 +575,6 @@ fieldset[disabled] .btn-default.active {
 }
 .link-pinterest{
 	color:#BD081C;
-}
-.btn-youtube{
-	background-color:#CD201F;
-	color: #fff !important;
-}
-.btn-social:hover{
-	background-color:#69C;
-	color:#fff !important;
 }
 .btn-primary,
 .liveSearch input[type="button"],
