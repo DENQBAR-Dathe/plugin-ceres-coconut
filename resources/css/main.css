@@ -719,14 +719,14 @@ a.PlentyWebshopButton:focus,
     background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment_bank_hover.png");
 }
 .payment_bank_en {
-    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment/payment_bank_en.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment_bank_en.png");
 }
 .payment_bank_en:hover {
-    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment/payment_bank_en_hover.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment_bank_en_hover.png");
 }
 .payment_bank_fr {
-    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment/payment_bank_fr.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment_bank_fr.png");
 }
 .payment_bank_fr:hover {
-    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment/payment_bank_fr_hover.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment_bank_fr_hover.png");
 }
