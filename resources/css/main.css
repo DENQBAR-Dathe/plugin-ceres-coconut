@@ -64,7 +64,6 @@ a:focus,
 .back-darkgrey{
   background-color: #333;
 }
-
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -534,6 +533,9 @@ fieldset[disabled] .btn-default.active {
 	width:60px;
 	margin:5px;
 }
+.btn-social > .fa {
+    float: none;
+}
 .btn-facebook{
 	background-color:#3B5998;
 	color: #fff !important;
@@ -652,23 +654,23 @@ a.PlentyWebshopButton:focus,
 	        box-shadow: none;
 }
 /* footer */
-footer {
+.footer {
 	color:#333;
 }
-footer a{
+.footer a{
 	color:#333 !important;
 }
-footer a:hover,
-footer a:focus {
+.footer a:hover,
+.footer a:focus {
 	color:#E20020 !important;;
 }
-footer strong {
+.footer strong {
 	font-weight: normal;
 	text-transform: uppercase;
 	color: #444;
 	text-rendering: optimizelegibility;
 }
-footer hr {
+.footer hr {
 	margin: 10px 0;
 }
 .payment_img{
