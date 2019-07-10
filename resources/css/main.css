@@ -429,50 +429,50 @@ footer hr {
 	height:58px;
 }
 .payment_paypal {
-    background-image: url("/images/gallery/payment/payment_paypal.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment_paypal.png");
 }
 .payment_paypal:hover {
-    background-image: url("/images/gallery/payment/payment_paypal_hover.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment_paypal_hover.png");
 }
 .payment_sofort {
-    background-image: url("/images/gallery/payment/payment_sofort.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment_sofort.png");
 }
 .payment_sofort:hover {
-    background-image: url("/images/gallery/payment/payment_sofort_hover.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment_sofort_hover.png");
 }
 .payment_credit{
-    background-image: url("/images/gallery/payment/payment_kredit.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment_kredit.png");
 }
 .payment_credit:hover {
-    background-image: url("/images/gallery/payment/payment_kredit_hover.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment_kredit_hover.png");
 }
 .payment_purchase {
-    background-image: url("/images/gallery/payment/payment_rechnung.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment_rechnung.png");
 }
 .payment_purchase:hover {
-    background-image: url("/images/gallery/payment/payment_rechnung_hover.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment_rechnung_hover.png");
 }
 .payment_amazon {
-    background-image: url("/images/gallery/payment/payment_amazon.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment_amazon.png");
 }
 .payment_amazon:hover {
-    background-image: url("/images/gallery/payment/payment_amazon_hover.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment_amazon_hover.png");
 }
 .payment_bank {
-    background-image: url("/images/gallery/payment/payment_bank.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment_bank.png");
 }
 .payment_bank:hover {
-    background-image: url("/images/gallery/payment/payment_bank_hover.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment_bank_hover.png");
 }
 .payment_bank_en {
-    background-image: url("/images/gallery/payment/payment_bank_en.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment/payment_bank_en.png");
 }
 .payment_bank_en:hover {
-    background-image: url("/images/gallery/payment/payment_bank_en_hover.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment/payment_bank_en_hover.png");
 }
 .payment_bank_fr {
-    background-image: url("/images/gallery/payment/payment_bank_fr.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment/payment_bank_fr.png");
 }
 .payment_bank_fr:hover {
-    background-image: url("/images/gallery/payment/payment_bank_fr_hover.png");
+    background-image: url("https://bilder.denqbar.com/frontend/DENQBAR_Layout/payment/payment/payment_bank_fr_hover.png");
 }
