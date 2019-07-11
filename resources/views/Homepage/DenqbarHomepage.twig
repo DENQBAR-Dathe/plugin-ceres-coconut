@@ -1,5 +1,5 @@
 {% set currentLang = services.sessionStorage.getLang() %}
-{% set homepageJson = getExternalContent("https://github.com/DENQBAR-Dathe/plugin_denqbar/blob/master/HomepageContent.json") %}
+{% set homepageJson = getExternalContent("https://raw.githubusercontent.com/DENQBAR-Dathe/plugin_denqbar/master/HomepageContent.json") %}
 {% set homepageData = homepageJson[currentLang] %}
 
 <div class="carousel slide" data-interval="5000" data-ride="carousel" id="carousel-example">
