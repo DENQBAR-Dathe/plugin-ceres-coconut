@@ -4,126 +4,86 @@
     "pictures":
     [
       {
-        "pictureUrl": "/images/gallery/slider2015/slider-denqbar-00j.jpg",
-        "text": "",
-        "pictureLink": ""
+        "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-01.jpg",
+        "pictureLink": "/inverter-stromerzeuger/"
       },
       {
-        "pictureUrl": "/images/gallery/slider2015/slider-denqbar-01b.jpg",
-        "text": "",
-        "pictureLink": "https://marketplace.plentymarkets.com/de/plugins/templates/Gebraucht_5163"
+        "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-02.jpg",
+        "pictureLink": "/inverter-stromerzeuger/"
       },
       {
-        "pictureUrl": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/slider3.jpg",
-        "text": "",
-        "pictureLink": "https://marketplace.plentymarkets.com/plugins/payment/paydirekt_4923"
+        "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-03.jpg",
+        "pictureLink": "/ruettelplatte/"
       },
       {
-        "pictureUrl": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/slider3.jpg",
-        "text": "",
-        "pictureLink": ""
+        "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-04.jpg",
+        "pictureLink": "/haecksler-schredder/"
       }
     ],
     "texts":
     {
       "welcome": "Herzlich Willkommen! ",
-      "shortDescription": "... in unserem neuen Responsive-Template <b>Ceres</b>. Das Template wurde optimiert für die Darstellung auf allen modernen Endgeräten (Desktop, Notebook, Tablet, Smartphone). Wir freuen uns über Ihr Interesse und wünschen Ihnen viel Spaß beim Entdecken der neuen Funktionalitäten.",
+      "shortDescription": "",
       "longText": "",
-      "recommendText": "plentymarkets empfiehlt"
-    },
-    "recommended":
-    [
-      {
-        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_amazon_de.jpg",
-        "pluginText": "Loyale Kunden. Inline-Checkout. Mobiloptimiert.",
-        "pluginLink": "https://pay.amazon.com/de/promotion?ld=SPEXDEAPA-plentymarkets-NL-XiS17",
-        "pluginTitle": "Amazon Pay"
-      },
-      {
-        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_etsy.png",
-        "pluginText": "Plugin für Etsy-Marktplatzintegration",
-        "pluginLink": "https://marketplace.plentymarkets.com/de/plugins/plentymarkets-GmbH/Etsy_4689",
-        "pluginTitle": "Etsy"
-      },
-      {
-        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_paydirekt.jpg",
-        "pluginText": "Neues Online-Bezahlverfahren mit Startbonus",
-        "pluginLink": "https://marketplace.plentymarkets.com/plugins/payment/paydirekt_4923",
-        "pluginTitle": "paydirekt"
-      },
-      {
-        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_gebrauchtde.jpg",
-        "pluginText": "Technik, Bekleidung, Medien, Haushalt, Kfz-Teile uvm. verkaufen!",
-        "pluginLink": "https://marketplace.plentymarkets.com/de/plugins/templates/Gebraucht_5163",
-        "pluginTitle": "gebraucht.de"
-      },
-      {
-        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_paypal.png",
-        "pluginText": "Das offizielle PayPal-Plugin für plentymarkets",
-        "pluginLink": "https://marketplace.plentymarkets.com/de/plugins/plentymarkets-GmbH/PayPal_4690",
-        "pluginTitle": "PayPal"
-      }
-
-    ]
+      "recommendText": ""
+    }
   },
   "en":
   {
     "pictures":
     [
       {
-        "pictureUrl": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/slider1.jpg",
-        "text": "",
-        "pictureLink": ""
+        "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-en-01.jpg",
+        "pictureLink": "/en/generators/"
       },
       {
-        "pictureUrl": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/slider_gebrauchtde.jpg",
-        "text": "",
-        "pictureLink": "https://marketplace.plentymarkets.com/en/plugins/templates/Gebraucht_5163"
+        "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-en-02.jpg",
+        "pictureLink": "/en/plate-compactors/"
       },
       {
-        "pictureUrl": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/slider2.jpg",
-        "text": "",
-        "pictureLink": ""
+        "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-en-03.jpg",
+        "pictureLink": "/en/shredder/"
       },
       {
-        "pictureUrl": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/slider3.jpg",
-        "text": "",
-        "pictureLink": ""
+        "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-en-04.jpg",
+        "pictureLink": "/en/generators/"
       }
     ],
     "texts":
     {
-      "welcome": "Welcome!",
-      "shortDescription": "... to our new responsive template <b>Ceres</b>.",
+      "welcome": "Welcome! ",
+      "shortDescription": "",
       "longText": "",
-      "recommendText": "plentymarkets recommends"
-    },
-    "recommended":
+      "recommendText": ""
+    }
+  },
+  "fr":
+  {
+    "pictures":
     [
       {
-        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_etsy.png",
-        "pluginText": "Plugin for integrating the market Etsy",
-        "pluginLink": "https://marketplace.plentymarkets.com/en/plugins/plentymarkets-GmbH/Etsy_4689",
-        "pluginTitle": "Etsy"
+        "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-fr-01.jpg",
+        "pictureLink": "/fr/groupe-electrogene/"
       },
       {
-        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_amazon_en.jpg",
-        "pluginText": "Loyal customers. Inline checkout. Optimised for mobile.",
-        "pluginLink": "https://pay.amazon.com/uk/promotion?ld=SPEXDEAPA-plentymarkets-NL-XiS17",
-        "pluginTitle": "Amazon Pay"
+        "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-fr-02.jpg",
+        "pictureLink": "/fr/plaques-vibrantes/"
       },
       {
-        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_gebrauchtde.jpg",
-        "pluginText": "Technik, Bekleidung, Medien, Haushalt, Kfz-Teile uvm. verkaufen!",
-        "pluginLink": "https://marketplace.plentymarkets.com/en/plugins/templates/Gebraucht_5163",
-        "pluginTitle": "gebraucht.de"
+        "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-fr-03.jpg",
+        "pictureLink": "/fr/broyeur-de-vegetaux/"
       },
       {
-        "pluginIcon": "https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/marketingresource/images/homepage/icon_plugin_paypal.png",
-        "pluginText": "The official PayPal plugin for plentymarkets",
-        "pluginLink": "https://marketplace.plentymarkets.com/en/plugins/plentymarkets-GmbH/PayPal_4690",
-        "pluginTitle": "PayPal"
+        "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-fr-04.jpg",
+        "pictureLink": "/fr/groupe-electrogene/"
       }
-    ]
+    ],
+    "texts":
+    {
+      "welcome": "Salut",
+      "shortDescription": "",
+      "longText": "",
+      "recommendText": ""
+    }
   }
 }

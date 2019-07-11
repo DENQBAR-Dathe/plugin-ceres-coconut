@@ -1,5 +1,5 @@
 {% set currentLang = services.sessionStorage.getLang() %}
-{% set homepageJson = content("DenqbarTemplate.HomepageContent.json") %}
+{% set homepageJson = getExternalContent("https://github.com/DENQBAR-Dathe/plugin_denqbar/blob/master/HomepageContent.json") %}
 {% set homepageData = homepageJson[currentLang] %}
 
 <div class="carousel slide" data-interval="5000" data-ride="carousel" id="carousel-example">
@@ -9,9 +9,6 @@
 			<a href="{{ picture.pictureLink }}">
 				<img class="img-fluid" src="{{ picture.pictureUrl }}" />
 			</a>
-			<div class="carousel-caption">
-				<h2>{% autoescape false %}{{ picture.text }}{% endautoescape %}</h2>
-			</div>
 		</div>
 		{% endfor %}
 	</div>
