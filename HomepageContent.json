@@ -4,19 +4,19 @@
     "pictures":
     [
       {
+        "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-00.jpg",
+        "pictureLink": "/inverter-stromerzeuger/"
+      },
+      {
         "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-01.jpg",
         "pictureLink": "/inverter-stromerzeuger/"
       },
       {
         "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-02.jpg",
-        "pictureLink": "/inverter-stromerzeuger/"
-      },
-      {
-        "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-03.jpg",
         "pictureLink": "/ruettelplatte/"
       },
       {
-        "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-04.jpg",
+        "pictureUrl": "https://bilder.denqbar.com/frontend/DENQBAR_Layout/homepage/slider-denqbar-03.jpg",
         "pictureLink": "/haecksler-schredder/"
       }
     ],
