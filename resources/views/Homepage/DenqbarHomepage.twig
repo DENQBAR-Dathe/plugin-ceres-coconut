@@ -1,7 +1,7 @@
 {% set currentLang = services.sessionStorage.getLang() %}
 {% set homepageJson = getExternalContent("https://raw.githubusercontent.com/DENQBAR-Dathe/plugin_denqbar/master/HomepageContent.json") %}
 {% set homepageData = homepageJson[currentLang] %}
-{% set hompageContent = services.category.get(6, lang)  %}
+{% set homepageContent = services.category.get(6, lang)  %}
 
 
 {# slider (full width) #}
