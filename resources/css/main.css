@@ -416,11 +416,11 @@ a:focus,
 	color:#333;
 }
 .footer a{
-	color:#333 !important;
+	color:#333;
 }
 .footer a:hover,
 .footer a:focus {
-	color:#E20020 !important;;
+	color:#E20020 !important;
 }
 .footer strong {
 	font-weight: normal;
