@@ -34,7 +34,7 @@
 
   <div class="back-blue mt-3">
     <div class="container">
-      <div class="row">
+      <div class="row mb-3">
         <div class="col-12">
           <p class="h4 mt-3 center">{{ trans("DenqbarTemplate::Template.denqbarFooterGoodReasonsHeader") }}</p>
           <hr class="mt-3 mb-3" />
@@ -94,7 +94,7 @@
           <div><a href="{{ services.category.getURL( linkPrivacyPolicy ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFourthCol02') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFourthCol02") }}</a></div>
           <div><a href="https://www.trustedshops.com/shop/certificate.php?shop_id=X359FE6555DFBB5649D538D5569CC77EF" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFourthCol03') }}">{{ trans("DenqbarTemplate::Template.denqbarFooterFourthCol03") }}</a></div>
         </div>
-        <div class="col-lg-2 col-md-6 col-12 center">
+        <div class="col-lg-4 col-md-6 col-12 center">
           <p class="h4 mt-2 center">{{ trans("DenqbarTemplate::Template.denqbarFooterFifthColHeader") }}</p>
           <hr class="mt-2 mb-3 back-darkgrey" />
           <div><a class="btn btn-social btn-blog" href="/blog/" title="{{ trans('DenqbarTemplate::Template.denqbarFooterFifthColBlogTitle') }}" target="_blank"><span class=""></span>{{ trans('DenqbarTemplate::Template.denqbarFooterFifthColBlog') }}</a></div>
@@ -108,32 +108,36 @@
   </div>
   <div class="back-grey">
     <div class="container">
-    <div class="row">
-        <p class="h4 mt-3 center">{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentH01') }}</p>
-        <hr class="mt-3 mb-3 back-darkgrey" />
-        <ul class="image-list">
-          <li>
-  					<a class="payment_paypal payment_img img-fluid" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentPayPal') }}" data-toggle="tooltip" data-placement="top"></a>
-  				</li>
-          {% if lang == "de" %}
-  				<li>
-  					<a class="payment_sofort payment_img img-fluid" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentSofort') }}" data-toggle="tooltip" data-placement="top"></a>
-  				</li>
-          <li>
-  					<a class="payment_purchase payment_img img-fluid" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentPurchase') }}" data-toggle="tooltip" data-placement="top"></a>
-  				</li>
-          {% endif %}
-  				<li>
-  					<a class="payment_credit payment_img img-fluid" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentCredit') }}" data-toggle="tooltip" data-placement="top"></a>
-  				</li>
-  				<li>
-  					<a class="payment_amazon payment_img img-fluid" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentAmazonPay') }}" data-toggle="tooltip" data-placement="top"></a>
-  				</li>
-  				<li>
-  					<a class="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentLang') }} payment_img img-fluid" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentBankTransfer') }}" data-toggle="tooltip" data-placement="top"></a>
-  				</li>
-        </ul>
-    </div>
+      <div class="row">
+        <div class="col-12">
+          <p class="h4 mt-3 center">{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentH01') }}</p>
+          <hr class="mt-3 mb-3 back-darkgrey" />
+        </div>
+        <div class="col-12">
+          <ul class="image-list">
+            <li>
+              <a class="payment_paypal payment_img img-fluid" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentPayPal') }}" data-toggle="tooltip" data-placement="top"></a>
+            </li>
+            {% if lang == "de" %}
+            <li>
+              <a class="payment_sofort payment_img img-fluid" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentSofort') }}" data-toggle="tooltip" data-placement="top"></a>
+            </li>
+            <li>
+              <a class="payment_purchase payment_img img-fluid" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentPurchase') }}" data-toggle="tooltip" data-placement="top"></a>
+            </li>
+            {% endif %}
+            <li>
+              <a class="payment_credit payment_img img-fluid" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentCredit') }}" data-toggle="tooltip" data-placement="top"></a>
+            </li>
+            <li>
+              <a class="payment_amazon payment_img img-fluid" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentAmazonPay') }}" data-toggle="tooltip" data-placement="top"></a>
+            </li>
+            <li>
+              <a class="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentLang') }} payment_img img-fluid" href="{{ services.category.getURL( linkPaymentsMethods ) }}" title="{{ trans('DenqbarTemplate::Template.denqbarFooterPaymentBankTransfer') }}" data-toggle="tooltip" data-placement="top"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
   <div class="back-grey">
