@@ -23,6 +23,13 @@ body {
   color: #fff;
 }
 
+.btn-link,
+a{
+  color:#00305E;
+  font-weight:600;
+  text-decoration:none
+}
+
 a:hover,
 a:focus,
 .basicColor a:hover,
