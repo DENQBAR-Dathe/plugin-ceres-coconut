@@ -102,6 +102,12 @@ a:focus,
     display: table;
 }
 
+ol,
+ul{
+  list-style:square;
+
+}
+
 .left {
   text-align: left;
 }
